@@ -6,11 +6,10 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install
+      - npm install -g .
   build:
     commands:
       - echo Build is started on `date`
-      - ng build 
   post_build:
      commands:
       - echo Build completed on `date`
